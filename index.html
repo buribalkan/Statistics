@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stage 4: Probability Distributions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #f9f9f9;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    blockquote {
+      background: #f0f8ff;
+      border-left: 5px solid #0077cc;
+      padding: 10px 15px;
+      margin: 20px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h2>📊 Stage 4: Probability Distributions</h2>
+
+<p>This section introduces <strong>probability distributions</strong> — mathematical functions that describe how probabilities are distributed over values of a random variable.</p>
+
+<h3>✅ Topics Covered:</h3>
+
+<h3>🎲 Discrete Distributions</h3>
+
+<p>Used when the variable can take <strong>countable values</strong> (e.g. number of customers, number of successes).</p>
+
+<h4>🧮 Binomial Distribution</h4>
+<ul>
+  <li>Models the number of <strong>successes</strong> in a fixed number of independent Bernoulli trials.</li>
+  <li>Each trial has two outcomes: success/failure.</li>
+  <li><strong>Parameters:</strong> n = number of trials, p = probability of success</li>
+</ul>
+<pre><code>P(X = k) = C(n, k) × p^k × (1 - p)^(n - k)</code></pre>
+<p><em>Example:</em> Probability of getting 3 heads in 5 coin tosses.</p>
+<pre><code>from scipy.stats import binom
+binom.pmf(k=3, n=5, p=0.5)  # Output: 0.3125</code></pre>
+
+<h4>🔢 Poisson Distribution</h4>
+<ul>
+  <li>Models the number of events occurring in a <strong>fixed interval</strong> of time/space.</li>
+  <li>Used when events are <strong>rare and independent</strong>.</li>
+  <li><strong>Parameter:</strong> λ (lambda) = expected number of occurrences</li>
+</ul>
+<pre><code>P(X = k) = (λ^k × e^(-λ)) / k!</code></pre>
+<pre><code>from scipy.stats import poisson
+poisson.pmf(k=4, mu=2)</code></pre>
+
+<h4>🎯 Geometric Distribution</h4>
+<ul>
+  <li>Models the number of <strong>trials until the first success</strong>.</li>
+  <li><strong>Memoryless property:</strong> previous failures don’t affect future outcome.</li>
+  <li><strong>Parameter:</strong> p = probability of success</li>
+</ul>
+<pre><code>P(X = k) = (1 - p)^(k - 1) × p</code></pre>
+<pre><code>from scipy.stats import geom
+geom.pmf(k=4, p=0.3)</code></pre>
+
+<h3>📈 Continuous Distributions</h3>
+
+<p>Used when variables can take <strong>any value in a range</strong> (e.g. height, weight, time).</p>
+
+<h4>🧘‍♂️ Normal Distribution (Gaussian)</h4>
+<ul>
+  <li>Bell-shaped, symmetric around the mean.</li>
+  <li><strong>Parameters:</strong> μ = mean, σ = standard deviation</li>
+</ul>
+<pre><code>f(x) = (1 / √(2πσ²)) × e^(-(x - μ)² / (2σ²))</code></pre>
+<pre><code>from scipy.stats import norm
+norm.pdf(x=170, loc=165, scale=10)</code></pre>
+
+<h4>🎲 Uniform Distribution</h4>
+<ul>
+  <li>All values in a range are <strong>equally likely</strong>.</li>
+  <li><strong>Parameters:</strong> a = lower bound, b = upper bound</li>
+</ul>
+<pre><code>f(x) = 1 / (b - a)</code></pre>
+<pre><code>from scipy.stats import uniform
+uniform.pdf(x=3, loc=1, scale=6)</code></pre>
+
+<h4>⏳ Exponential Distribution</h4>
+<ul>
+  <li>Models the <strong>time between events</strong> in a Poisson process.</li>
+  <li><strong>Parameter:</strong> λ (rate parameter)</li>
+</ul>
+<pre><code>f(x) = λ × e^(-λx)</code></pre>
+<pre><code>from scipy.stats import expon
+expon.pdf(x=2, scale=1/0.5)</code></pre>
+
+<h3>📘 Central Limit Theorem (CLT)</h3>
+<blockquote>
+  The <strong>CLT</strong> states that the sampling distribution of the sample mean approaches a <strong>normal distribution</strong> as the sample size increases — regardless of the population’s original distribution.
+</blockquote>
+<p><strong>Why it matters?</strong> Enables use of normal approximation for inference even when the original data is not normal.</p>
+
+<h3>📏 Standard Normal Distribution & Z-tables</h3>
+<ul>
+  <li>A <strong>special case</strong> of the normal distribution: μ = 0, σ = 1</li>
+</ul>
+<pre><code>Z = (X - μ) / σ</code></pre>
+<p><em>Example:</em> What is the probability of a Z &lt; 1.96?</p>
+<pre><code>from scipy.stats import norm
+norm.cdf(1.96)  # ≈ 0.975</code></pre>
+
+<h3>📌 Summary Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Distribution</th>
+      <th>Type</th>
+      <th>Use Case Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Binomial</td><td>Discrete</td><td># of successes in fixed trials</td></tr>
+    <tr><td>Poisson</td><td>Discrete</td><td>Rare events per time/space unit</td></tr>
+    <tr><td>Geometric</td><td>Discrete</td><td>First success after trials</td></tr>
+    <tr><td>Normal</td><td>Continuous</td><td>Heights, IQ, test scores</td></tr>
+    <tr><td>Uniform</td><td>Continuous</td><td>Equal chance across a range</td></tr>
+    <tr><td>Exponential</td><td>Continuous</td><td>Time between arrivals</td></tr>
+    <tr><td>Standard Normal</td><td>Continuous</td><td>Z-scores and inference</td></tr>
+  </tbody>
+</table>
+
+<blockquote>
+  🧠 "The normal distribution is not just a model — it’s the model behind many models." 
+  — Unknown
+</blockquote>
+
+</body>
+</html>
