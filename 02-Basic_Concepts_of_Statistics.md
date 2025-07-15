@@ -1,4 +1,9 @@
-# 📊 Basic Concepts of Statistics
+---
+layout: default
+title: Basic Concepts of Statistics
+---
+
+## 📊 Basic Concepts of Statistics
 
 A foundational overview of core statistical concepts, including types of data, measurement scales, and descriptive measures.
 
