@@ -41,11 +41,8 @@ $$
 
 
 
+```
 
-#### 🔹 Spearman Correlation
-- Measures **monotonic** relationships.
-- Based on **rankings** of the data.
-- Useful when the data is not normally distributed or not linear.
 
 
 Code:
