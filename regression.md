@@ -40,7 +40,7 @@ $$
 y = \beta_0 + \beta_1 x + \varepsilon
 $$
 
-
+---
 Code:
 
 ```python
@@ -55,7 +55,7 @@ X = sm.add_constant(x)
 model = sm.OLS(y, X).fit()
 print(model.summary())
 ```
-
+---
 Output:
 
 ```python
@@ -83,7 +83,7 @@ Kurtosis:                       1.450   Cond. No.                         8.37
 ==============================================================================
 
 ```
-
+---
 📥 [Download simple_regression.py](python/regression/simple_regression.py)
 
 ---
