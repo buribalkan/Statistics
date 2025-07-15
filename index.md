@@ -21,6 +21,16 @@ title: Home
       </div>
     </div>
   </div>
+    <div class="col">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">📊 Learning Statistics Roadmap</h5>
+        <p class="card-text">A foundational overview of core statistical concepts, including types of data, measurement scales, and descriptive measures. </p>
+        <a href="{{ site.baseurl }}/02-Learning_Statistics_Roadmap" class="btn btn-outline-primary btn-sm">Explore →</a>
+      </div>
+    </div>
+  </div>
+    
   <div class="col">
     <div class="card h-100 border-0 shadow-sm">
       <div class="card-body">
