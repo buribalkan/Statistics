@@ -56,7 +56,7 @@ title: Home
     <div class="card h-100 border-0 shadow-sm">
       <div class="card-body">
         <h5 class="card-title">🔎 Regression</h5>
-        <p class="card-text">Identify and handle outliers using Z-score, IQR, and visual tools.</p>
+        <p class="card-text">Understanding how two or more variables relate to each other is fundamental in statistics. Regression and correlation help us explore, model, and predict these relationships.</p>
         <a href="{{ site.baseurl }}/regression" class="btn btn-outline-primary btn-sm">Explore →</a>
       </div>
     </div>
