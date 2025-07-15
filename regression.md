@@ -35,9 +35,9 @@ Correlation measures the **strength and direction** of a relationship between tw
 
 A model to describe the **linear relationship** between two variables:
 
-\[
+\\[
 y = \beta_0 + \beta_1 x + \varepsilon
-\]
+\\]
 
 Code:
 
