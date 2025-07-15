@@ -199,6 +199,8 @@ describe()
 Fast numeric summary of data
 
 
-🧠 “A picture is worth a thousand words — especially in data science.”
+---
+
+> 🧠 “A picture is worth a thousand words — especially in data science.”
 
 ---
