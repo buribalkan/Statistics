@@ -40,7 +40,7 @@ y = \beta_0 + \beta_1 x + \varepsilon
 \]$
 
 Code:
-<div class="code">
+
 ```python
 import pandas as pd
 import statsmodels.api as sm
@@ -53,7 +53,7 @@ X = sm.add_constant(x)
 model = sm.OLS(y, X).fit()
 print(model.summary())
 ```
-</div>
+
 Output:
 
 ```python
