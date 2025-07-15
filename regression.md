@@ -34,7 +34,7 @@ Correlation measures the **strength and direction** of a relationship between tw
 ### 📈 Simple Linear Regression
 
 A model to describe the **linear relationship** between two variables:
-This is a LaTeX inline formula: $y = \beta_0 + \beta_1 x + \varepsilon$
+//This is a LaTeX inline formula: $y = \beta_0 + \beta_1 x + \varepsilon$
 
 $$
 y = \beta_0 + \beta_1 x + \varepsilon
