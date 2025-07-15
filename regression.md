@@ -35,9 +35,9 @@ Correlation measures the **strength and direction** of a relationship between tw
 
 A model to describe the **linear relationship** between two variables:
 
-\[
+$\[
 y = \beta_0 + \beta_1 x + \varepsilon
-\]
+\]$
 
 Code:
 
@@ -90,9 +90,9 @@ Kurtosis:                       1.450   Cond. No.                         8.37
 
 Extends simple regression to **multiple predictors**:
 
-\[
+$\[
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \varepsilon
-\]
+\]$
 
 📥 [Download multiple_regression.py](python/regression/multiple_regression.py)
 
@@ -111,8 +111,8 @@ Residuals are the **differences between predicted and actual values**.
 
 Used when the **dependent variable is categorical**, especially binary (yes/no, 0/1):
 
-\[
+$\[
 P(y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
-\]
+\]$
 
 📥 [Download logistic_regression.py](python/regression/logistic_regression.py)
