@@ -52,7 +52,15 @@ title: Home
       </div>
     </div>
   </div>
-
+  <div class="col">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">🔎 Regression</h5>
+        <p class="card-text">Identify and handle outliers using Z-score, IQR, and visual tools.</p>
+        <a href="{{ site.baseurl }}/regression" class="btn btn-outline-primary btn-sm">Explore →</a>
+      </div>
+    </div>
+  </div>
   <div class="col">
     <div class="card h-100 border-0 shadow-sm">
       <div class="card-body">
