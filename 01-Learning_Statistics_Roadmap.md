@@ -1,4 +1,4 @@
-## 📊 Statistics Learning Roadmap
+# 📊 Statistics Learning Roadmap
 > A step-by-step guide to learning statistics from beginner to advanced level — with practical applications in data analysis, machine learning, research, and real-life decision-making.
 
 ---
