@@ -66,21 +66,18 @@ binom.pmf(k=3, n=5, p=0.5)  # Output: 0.3125
 
 
 
-⸻
+---
 
 
 
 🔢 Poisson Distribution
 
-	•	Models the number of events occurring in a fixed interval of time/space.
 
-	•	Used when events are rare and independent.
-
-	•	Parameter:
-
-	•	λ (lambda): expected number of occurrences
-
-	•	PMF:
+- Models the number of events occurring in a fixed interval of time/space.
+- Used when events are rare and independent.
+- Parameter:
+- λ (lambda): expected number of occurrences
+- PMF:
 
 P(X = k) = (λ^k × e^(-λ)) / k!
 
