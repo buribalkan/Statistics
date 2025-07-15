@@ -16,7 +16,7 @@ title: Home
     <div class="card h-100 border-0 shadow-sm">
       <div class="card-body">
         <h5 class="card-title">📊 Learning Statistics Roadmap</h5>
-        <p class="card-text">.......</p>
+        <p class="card-text">A step-by-step guide to learning statistics from beginner to advanced level. </p>
         <a href="{{ site.baseurl }}/01-Learning_Statistics_Roadmap" class="btn btn-outline-primary btn-sm">Explore →</a>
       </div>
     </div>
