@@ -39,6 +39,15 @@ $$
 y = \beta_0 + \beta_1 x + \varepsilon
 $$
 
+
+
+
+#### 🔹 Spearman Correlation
+- Measures **monotonic** relationships.
+- Based on **rankings** of the data.
+- Useful when the data is not normally distributed or not linear.
+
+
 Code:
 
 ```python
