@@ -40,11 +40,6 @@ y = \beta_0 + \beta_1 x + \varepsilon
 $$
 
 
-
-```
-
-
-
 Code:
 
 ```python
