@@ -5,13 +5,8 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <script>
   window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\$begin:math:text$', '\\$end:math:text$']],
-      displayMath: [['$$', '$$'], ['\$begin:math:display$', '\\$end:math:display$']],
-      processEscapes: true
-    },
     options: {
-      ignoreHtmlClass: ".*(?:code|highlight).*",
+      ignoreHtmlClass: ".*",
       processHtmlClass: "arithmatex"
     }
   };
