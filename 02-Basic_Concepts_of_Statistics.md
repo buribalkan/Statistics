@@ -5,13 +5,13 @@ title: Basic Concepts of Statistics
 
 ## 📊 Basic Concepts of Statistics
 
-A foundational overview of core statistical concepts, including types of data, measurement scales, and descriptive measures.
-
+A foundational overview of core statistical concepts, including types of data, measurement scales, and descriptive measures. 
 ---
 
 ## 🧠 What is Statistics?
 
-**Statistics** is the science of collecting, organizing, analyzing, interpreting, and presenting data.
+**Statistics** is the science of collecting, organizing, analyzing, interpreting, and presenting data. **Statistics** is the practice of applying math techniques to our **data** in a way that helps us **analyze, interpret, and present** that data to our audience. The field of statistics has two branches. **Descriptive statistics** are techniques that focus on describing our dataset. They summarize our data and tell us some of the primary visible features that it contains. **Inferential statistics** go beyond describing our data and begin to draw conclusions from it. We use inferential statistics to make generalized conclusions about our data and make predictions about the future from our data. In this course, we're going to cover techniques of both descriptive and inferential statistics.
+
 
 ### Two Main Branches:
 
