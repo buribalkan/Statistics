@@ -39,6 +39,22 @@ A model to describe the **linear relationship** between two variables:
 y = \beta_0 + \beta_1 x + \varepsilon
 \]
 
+
+import pandas as pd
+import statsmodels.api as sm
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 5, 4, 5]
+
+X = sm.add_constant(x)
+model = sm.OLS(y, X).fit()
+print(model.summary())
+
+
+
+
+
 📥 [Download simple_regression.py](python/regression/simple_regression.py)
 
 ---
