@@ -39,7 +39,9 @@ A model to describe the **linear relationship** between two variables:
 y = \beta_0 + \beta_1 x + \varepsilon
 \]
 
+Code:
 
+```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -50,10 +52,35 @@ y = [2, 4, 5, 4, 5]
 X = sm.add_constant(x)
 model = sm.OLS(y, X).fit()
 print(model.summary())
+```
 
+Output:
 
+```python
+ OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.600
+Model:                            OLS   Adj. R-squared:                  0.467
+Method:                 Least Squares   F-statistic:                     4.500
+Date:                Tue, 15 Jul 2025   Prob (F-statistic):              0.124
+Time:                        18:28:42   Log-Likelihood:                -5.2598
+No. Observations:                   5   AIC:                             14.52
+Df Residuals:                       3   BIC:                             13.74
+Df Model:                           1
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.2000      0.938      2.345      0.101      -0.785       5.185
+x1             0.6000      0.283      2.121      0.124      -0.300       1.500
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.017
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.570
+Skew:                           0.289   Prob(JB):                        0.752
+Kurtosis:                       1.450   Cond. No.                         8.37
+==============================================================================
 
-
+```
 
 📥 [Download simple_regression.py](python/regression/simple_regression.py)
 
