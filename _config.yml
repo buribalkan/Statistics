@@ -1,4 +1,6 @@
 title: Statistics Learning
+theme: minima
+permalink: pretty
 markdown: kramdown
 highlighter: rouge
 kramdown:
