@@ -32,8 +32,6 @@ Understanding data requires both analysis and visualization. Below are some of t
 
 import pandas as pd
 
-
-
 df = pd.read_csv("data.csv")
 
 print(df.describe())
@@ -58,8 +56,6 @@ Example:
 
 ```python
 import matplotlib.pyplot as plt
-
-
 
 plt.hist(df["age"], bins=10)
 
@@ -92,6 +88,7 @@ Example:
 
 ```python
 import seaborn as sns
+
 sns.boxplot(x=df["salary"])
 ```
 
@@ -115,8 +112,6 @@ Example:
 
 ```R
 library(ggplot2)
-
-
 
 ggplot(data = df, aes(x = salary)) + 
 
@@ -173,7 +168,9 @@ Beautiful, layered plots
 ggplot2
 
 
-“Visualization gives you answers to questions you didn’t know you had.”
+---
+
+> 📘Visualization gives you answers to questions you didn’t know you had.
 
 — Ben Schneiderman
 
