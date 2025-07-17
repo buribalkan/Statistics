@@ -51,7 +51,7 @@ const highlightedCode = hljs.highlight(
 <script type="module">
   import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
-    codeBlock.parentElement.outerHTML = `<pre><code class="language-python"><![CDATA[${codeBlock.textContent}]]></code></pre>`;
+    codeBlock.parentElement.outerHTML = `<pre><code class="language-python"><${codeBlock.textContent}></code></pre>`;
   hljs.highlightAll();
   });</script>
 
