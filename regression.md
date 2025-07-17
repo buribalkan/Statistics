@@ -25,6 +25,51 @@ Correlation measures the **strength and direction** of a relationship between tw
 - Based on **rankings** of the data.
 - Useful when the data is not normally distributed or not linear.
 
+
+```mermaid
+flowchart TD
+
+    A[Start: Choose Correlation Type] --> B{Type of Data}
+
+    B -->|Continuous, Normally Distributed| C[→ Pearson Correlation]
+
+    B -->|Ordinal, Non-Normal Distribution| D[→ Spearman Correlation]
+
+
+
+    C --> C1[Measures: Linear relationship]
+
+    C --> C2[Example: Height vs Weight]
+
+    C --> C3[Data: X and Y are numeric and normal]
+
+
+
+    D --> D1[Measures: Monotonic relationship]
+
+    D --> D2[Example: Rank vs Exam Success]
+
+    D --> D3[Data: X and Y can be ranked, not necessarily normal]
+
+
+
+    style C fill:#E6F7FF,stroke:#0B62A4,stroke-width:1px
+
+    style D fill:#FFF2E6,stroke:#F08C00,stroke-width:1px
+
+```
+
+📌 Summary:
+
+Pearson correlation is used when you assume a linear relationship between two normally distributed continuous variables.
+Spearman correlation is a non-parametric test used when data is not normally distributed or is ordinal. It measures how well the relationship between two variables can be described using a monotonic function.
+
+
+
+
+
+
+
 > Example: Correlation between exam rank and study hours.
 
 📥 [Download pearson_spearman.py](python/regression/pearson_spearman.py)
