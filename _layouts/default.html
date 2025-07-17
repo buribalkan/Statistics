@@ -49,5 +49,8 @@
     codeBlock.parentElement.outerHTML = `<pre><code class="language-python">${codeBlock.textContent}</code></pre>`;
     
   });</script>
-  <script>hljs.highlightAll();</script>
+  <script>
+    hljs = require('highlight.js');
+    hljs.highlightAll();
+  </script>
 
