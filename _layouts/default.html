@@ -47,9 +47,14 @@
   
 <script type="module">
   import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
-  document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
-    codeBlock.parentElement.outerHTML = `<pre><code class="language-python"><${codeBlock.textContent}></code></pre>`;
-  hljs.highlightAll();
-  });</script>
 
+  document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
+    // İlgili dil sınıfı yoksa ekle
+    if (!codeBlock.classList.contains('language-python')) {
+      codeBlock.classList.add('language-python');
+    }
+  });
+
+  hljs.highlightAll(); // Tüm <code> bloklarını renklendir
+</script>
 
