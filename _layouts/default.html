@@ -26,12 +26,7 @@
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico">
    <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
-<script type="module">
-import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
-//  and it's easy to individually load additional languages
-import go from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/languages/go.min.js';
-hljs.registerLanguage('go', go);
-</script>
+
   
 </head>
 <body>
@@ -48,7 +43,11 @@ hljs.registerLanguage('go', go);
   </div>
 </div>
 
+
+  
 <script>
+  import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
+  hljs.initialize({ startOnLoad: true });
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
     codeBlock.parentElement.outerHTML = `<pre><code class="language-python">${codeBlock.textContent}</code></pre>`;
     hljs.highlightAll();
