@@ -47,6 +47,6 @@
 <script>
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
     codeBlock.parentElement.outerHTML = `<pre><code class="language-python">${codeBlock.textContent}</code></pre>`;
-    hljs.highlightAll();
+    
   });</script>
 
