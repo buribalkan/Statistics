@@ -44,6 +44,6 @@
 
 <script>
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
-    codeBlock.parentElement.outerHTML = `<pre><code class="python">${codeBlock.textContent}</code></pre>`;
+    codeBlock.parentElement.outerHTML = `<pre><code class="language-python">${codeBlock.textContent}</code></pre>`;
   });</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
