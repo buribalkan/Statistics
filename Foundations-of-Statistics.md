@@ -64,7 +64,7 @@ $$
 - Example: Data = [4, 7, 8, 6, 5]
 
  
-  $$
+$$
   \bar{x} = \frac{4 + 7 + 8 + 6 + 5}{5} = \frac{30}{5} = 6
   $$
 
@@ -108,7 +108,7 @@ $$
 s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2}
 $$
 
-Example: For data [2, 4, 4, 4, 5, 5, 7, 9], mean $$\( \bar{x} = 5 \)$$
+Example: For data [2, 4, 4, 4, 5, 5, 7, 9], mean $$\bar{x} = 5 $$
 
 ### Interquartile Range (IQR)
 
