@@ -116,8 +116,8 @@ $$
 IQR = Q_3 - Q_1
 $$
 
-- $$\(Q_1\)$$: 25th percentile (lower quartile)  
-- $$\(Q_3\)$$: 75th percentile (upper quartile)
+- $$Q_1$$: 25th percentile (lower quartile)  
+- $$Q_3$$: 75th percentile (upper quartile)
 
 ---
 
