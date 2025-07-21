@@ -57,9 +57,9 @@ graph TD;
 
 ### Mean (Arithmetic Average)
 
-$$\[
+$$
 \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-\]$$
+$$
 
 - Example: Data = [4, 7, 8, 6, 5]
 
