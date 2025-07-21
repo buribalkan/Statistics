@@ -7,7 +7,6 @@ body {
 .card:hover {
   transform: scale(1.02);
 }
-mjx-container {
+.MathJax_Display {
   text-align: left !important;
-  display: block !important;
 }
