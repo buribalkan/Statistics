@@ -64,9 +64,9 @@ $$
 - Example: Data = [4, 7, 8, 6, 5]
 
  
-  $$\[
+  $$
   \bar{x} = \frac{4 + 7 + 8 + 6 + 5}{5} = \frac{30}{5} = 6
-  \]$$
+  $$
 
 ### Median
 
@@ -90,31 +90,31 @@ Example: Data = [2, 4, 4, 5, 6] → Mode = 4
 
 ### Range
 
-$$\[
+$$
 \text{Range} = x_{\text{max}} - x_{\text{min}}
-\]$$
+$$
 
 Example: Data = [3, 5, 7, 9] → Range = 9 - 3 = 6
 
 ### Variance
 
-$$\[
+$$
 s^2 = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2
-\]$$
+$$
 
 ### Standard Deviation
 
-$$\[
+$$
 s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2}
-\]$$
+$$
 
 Example: For data [2, 4, 4, 4, 5, 5, 7, 9], mean $$\( \bar{x} = 5 \)$$
 
 ### Interquartile Range (IQR)
 
-$$\[
+$$
 IQR = Q_3 - Q_1
-\]$$
+$$
 
 - $$\(Q_1\)$$: 25th percentile (lower quartile)  
 - $$\(Q_3\)$$: 75th percentile (upper quartile)
@@ -134,13 +134,13 @@ IQR = Q_3 - Q_1
 
 | Concept                  | Description                              | Formula / Notes                                  |
 |--------------------------|------------------------------------------|--------------------------------------------------|
-| **Mean**                 | Average value                            | $$\(\bar{x} = \frac{1}{n} \sum x_i\)$$             |
+| **Mean**                 | Average value                            | $$\bar{x} = \frac{1}{n} \sum x_i$$             |
 | **Median**               | Middle value                             | Sort data, pick center                           |
 | **Mode**                 | Most frequent value                      | Can be multiple or none                          |
-| **Range**                | Difference between max and min           | $$\(x_{\text{max}} - x_{\text{min}}\)$$             |
-| **Variance**             | Average squared deviation                | $$\(s^2 = \frac{1}{n-1} \sum (x_i - \bar{x})^2\)$$ |
-| **Standard Deviation**   | Spread of values from mean               | $$\(s = \sqrt{\frac{1}{n - 1} \sum (x_i - \bar{x})^2}\)$$ |
-| **IQR**                  | Middle 50% range                         | $$\(Q_3 - Q_1\)$$                                  |
+| **Range**                | Difference between max and min           | $$x_{\text{max}} - x_{\text{min}}$$             |
+| **Variance**             | Average squared deviation                | $$s^2 = \frac{1}{n-1} \sum (x_i - \bar{x})^2$$ |
+| **Standard Deviation**   | Spread of values from mean               | $$s = \sqrt{\frac{1}{n - 1} \sum (x_i - \bar{x})^2}$$ |
+| **IQR**                  | Middle 50% range                         | $$Q_3 - Q_1$$                                  |
 | **Nominal Scale**        | Categories, no order                     | Labels                                           |
 | **Ordinal Scale**        | Categories with order                    | Ranks                                            |
 | **Interval Scale**       | Equal intervals, no true zero            | Temperature scales                               |
