@@ -7,3 +7,6 @@ body {
 .card:hover {
   transform: scale(1.02);
 }
+mjx-container[jax="SVG"][display="true"] {
+  text-align: left !important;
+}
